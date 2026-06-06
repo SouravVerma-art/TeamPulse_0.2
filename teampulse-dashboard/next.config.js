@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: 'export',
   // We can add rewrites if we want to proxy the backend,
   // but the code uses direct URLs for SSE.
 };
