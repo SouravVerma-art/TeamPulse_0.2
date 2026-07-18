@@ -105,7 +105,7 @@ type SendEmailRequest struct {
 
 type SystemSettings struct {
 	AutoRun            bool              `json:"auto_run"`
-	EmailNotifications bool              `json:"email_notifications"`
+	EmailNotifications bool               `json:"email_notifications"`
 	IntegrationStatus  map[string]bool   `json:"integration_status"`
 	FieldValues        map[string]string `json:"field_values"`
 }
