@@ -99,7 +99,7 @@ func (c *Client) CompleteJSON(ctx context.Context, prompt string, target any) er
 	if err != nil {
 		msg := err.Error()
 		if strings.Contains(msg, "The `models` permission is required") {
-			return fmt.Errorf("ai: 401 Unauthorized - Your GITHUB_TOKEN is missing the 'GitHub Models' account permission. Please go to GitHub Settings -> Developer Settings -> Fine-grained tokens -> [Your Token] -> Account permissions -> Models and set to 'Read-only'.")
+			return fmt.Errorf("ai: 401 Unauthorized - Your GITHUB_TOKEN is missing the 'GitHub Models' account permission. Please go to GitHub Settings -> Developer Settings -> Fine-grained tokens -> [Your Token] -> Account permissions -> Models and set to 'Read-only' Thank you.")
 		}
 		return fmt.Errorf("ai: generate JSON content failed: %w", err)
 	}
